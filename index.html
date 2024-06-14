@@ -10,11 +10,12 @@
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
+            color: #333;
         }
         .header {
             background-color: #007bff;
             color: #fff;
-            padding: 10px 0;
+            padding: 20px 0;
             text-align: center;
         }
         .container {
@@ -30,14 +31,14 @@
             padding-bottom: 10px;
             margin-bottom: 20px;
         }
-        .project {
+        .project, .job {
             margin-bottom: 20px;
         }
-        .project a {
+        .project a, .job a {
             color: #007bff;
             text-decoration: none;
         }
-        .project a:hover {
+        .project a:hover, .job a:hover {
             text-decoration: underline;
         }
         .contact {
@@ -53,6 +54,15 @@
         .contact a:hover {
             text-decoration: underline;
         }
+        .photo {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+        .photo img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+        }
     </style>
 </head>
 <body>
@@ -61,9 +71,27 @@
         <p>AI Engineer | Machine Learning Expert</p>
     </div>
     <div class="container">
+        <div class="photo">
+            <img src="your-photo-url.jpg" alt="MD Fahim Afridi">
+        </div>
         <div class="section">
             <h2>About Me</h2>
             <p>I am a results-driven AI engineer adept at developing and deploying models, preparing data, and working with cross-functional teams to produce scalable AI solutions. I am committed to building cutting-edge AI solutions that foster corporate growth and improve user experiences.</p>
+        </div>
+        <div class="section">
+            <h2>Job Experience</h2>
+            <div class="job">
+                <h3>Machine Learning Engineer (Officer), Business Intelligence at উপায় (upay), Bangladesh</h3>
+                <p>Played a vital role in transformative initiatives, driving substantial growth in three months. Spearheaded ETL automation with a functional system, developed advanced analytical models, and automated sales reporting. Generated actionable insights from data for strategic decision-making.</p>
+                <p><strong>Accomplishments:</strong></p>
+                <ul>
+                    <li>Spearheaded ETL automation by developing over 150 functions, drastically reducing manual workload by 70%.</li>
+                    <li>Conducted 9 comprehensive data analysis projects and built prediction models to derive actionable insights into customer behavior, sales trends, and market performance.</li>
+                    <li>Designed and executed churn models to effectively mitigate customer attrition, enhancing retention strategies.</li>
+                    <li>Utilized predictive analytics for 3 proactive decision-making projects on upcoming transactions, optimizing business outcomes.</li>
+                    <li>Ran sales and campaign analysis efforts to optimize strategies for enhanced revenue generation and automated 3 sales reporting projects for efficiency and accuracy.</li>
+                </ul>
+            </div>
         </div>
         <div class="section">
             <h2>Projects</h2>
@@ -71,6 +99,7 @@
                 <h3>Doodle-to-Clothing</h3>
                 <p>A clothing design recognition and searching model from doodle drawings.</p>
                 <p><a href="https://github.com/Fahim043/Thesis-Doodle-to-search">View on GitHub</a></p>
+                <p>Thesis: A way that you can search for products online by drawing.</p>
             </div>
             <div class="project">
                 <h3>Butterfly Pollination</h3>
