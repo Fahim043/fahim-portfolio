@@ -15,36 +15,38 @@
             overflow-x: hidden;
         }
         .header {
-            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
-            color: #fff;
-            padding: 40px 20px;
-            text-align: center;
+            background: #fff;
+            border-bottom: 2px solid #4e54c8;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
         }
         .header .text {
-            max-width: 80%;
-            margin: 0 auto;
+            flex: 1;
+            margin-left: 20px;
         }
         .header img {
             border-radius: 50%;
-            width: 150px;
-            height: 150px;
+            width: 120px;
+            height: 120px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
-            display: block;
-            margin: 20px auto;
         }
         .header img:hover {
             transform: scale(1.1);
         }
         .header h1 {
             font-size: 2.5em;
-            margin: 10px 0 5px;
+            margin: 0;
             font-weight: 700;
+            color: #4e54c8;
         }
         .header p {
             font-size: 1.2em;
             margin: 5px 0 0;
+            color: #666;
         }
         .container {
             width: 80%;
@@ -132,19 +134,15 @@
             from { opacity: 0; transform: translateY(20px); }
             to { opacity: 1; transform: translateY(0); }
         }
-        @keyframes fadeInDown {
-            from { opacity: 0; transform: translateY(-20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
 </head>
 <body>
     <div class="header">
+        <img src="327292084_1220899378530062_3760787487058338747_n.jpg" alt="MD Fahim Afridi">
         <div class="text">
-            <h1>MD Fahim Afridi Ani</h1>
+            <h1>MD Fahim Afridi</h1>
             <p>AI Engineer | Machine Learning Expert | Data Scientist | Researcher</p>
         </div>
-        <img src="327292084_1220899378530062_3760787487058338747_n.jpg" alt="MD Fahim Afridi">
     </div>
     <div class="container">
         <div class="section">
