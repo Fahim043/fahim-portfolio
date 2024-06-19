@@ -17,10 +17,24 @@
         .header {
             background: linear-gradient(90deg, #4e54c8, #8f94fb);
             color: #fff;
-            padding: 50px 0;
+            padding: 50px 20px;
             text-align: center;
             position: relative;
             animation: fadeInDown 1.5s;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .header img {
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s;
+            margin-bottom: 20px;
+        }
+        .header img:hover {
+            transform: scale(1.1);
         }
         .header h1 {
             font-size: 2.5em;
@@ -139,13 +153,11 @@
 </head>
 <body>
     <div class="header">
+        <img src="327292084_1220899378530062_3760787487058338747_n.jpg" alt="MD Fahim Afridi">
         <h1>MD Fahim Afridi</h1>
-        <p>AI Engineer | Machine Learning Expert</p>
+        <p>AI Engineer | Machine Learning Expert | Data Scientist | Researcher |</p>
     </div>
     <div class="container">
-        <div class="photo">
-            <img src="327292084_1220899378530062_3760787487058338747_n.jpg" alt="MD Fahim Afridi">
-        </div>
         <div class="section">
             <h2>About Me</h2>
             <p>I am a dedicated and innovative AI engineer with extensive experience in developing and deploying machine learning models. My expertise lies in data analysis, deep learning, and natural language processing. I excel in working with cross-functional teams to deliver scalable AI solutions that drive business growth and enhance user experiences. With a strong background in both theoretical and practical aspects of AI, I am passionate about leveraging technology to solve complex problems and create impactful solutions.</p>
