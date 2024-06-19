@@ -18,12 +18,14 @@
             background: linear-gradient(90deg, #4e54c8, #8f94fb);
             color: #fff;
             padding: 50px 20px;
-            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
             position: relative;
             animation: fadeInDown 1.5s;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+        }
+        .header .text {
+            max-width: 70%;
         }
         .header img {
             border-radius: 50%;
@@ -31,7 +33,6 @@
             height: 150px;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
             transition: transform 0.3s;
-            margin-bottom: 20px;
         }
         .header img:hover {
             transform: scale(1.1);
@@ -104,21 +105,6 @@
         .contact a:hover {
             text-decoration: underline;
         }
-        .photo {
-            text-align: center;
-            margin-bottom: 50px;
-            animation: fadeIn 2s;
-        }
-        .photo img {
-            border-radius: 50%;
-            width: 150px;
-            height: 150px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s;
-        }
-        .photo img:hover {
-            transform: scale(1.1);
-        }
         .skills {
             display: flex;
             flex-wrap: wrap;
@@ -153,9 +139,11 @@
 </head>
 <body>
     <div class="header">
+        <div class="text">
+            <h1>MD Fahim Afridi</h1>
+            <p>AI Engineer | Machine Learning Expert | Data Scientist | Researcher</p>
+        </div>
         <img src="327292084_1220899378530062_3760787487058338747_n.jpg" alt="MD Fahim Afridi">
-        <h1>MD Fahim Afridi</h1>
-        <p>AI Engineer | Machine Learning Expert | Data Scientist | Researcher |</p>
     </div>
     <div class="container">
         <div class="section">
@@ -205,10 +193,10 @@
                 <p>This project, which is my thesis, is published and involves generating clothing designs from doodles using advanced deep learning techniques.</p>
             </div>
             <div class="project" onclick="window.location.href='https://huggingface.co/spaces/Fahim043/Butterfly_Pollination';">
-                <h3>Butterfly_Pollination</h3>
-                <p>This project, which is my another research, is publication Pending and utilizes an Xception  model to classify butterfly species based on images provided by the user. Once the species is identified, the app displays a bar plot showing the top 7 plant interactions for the identified butterfly species.</p>
+                <h3>Butterfly Pollination</h3>
+                <p>This project, which is my another research, is publication pending and utilizes an Xception model to classify butterfly species based on images provided by the user. Once the species is identified, the app displays a bar plot showing the top 7 plant interactions for the identified butterfly species.</p>
             </div>
-             <div class="project" onclick="window.location.href='https://github.com/Fahim043/Lungs-Disease-detection';">
+            <div class="project" onclick="window.location.href='https://github.com/Fahim043/Lungs-Disease-detection';">
                 <h3>Lungs Disease Detection</h3>
                 <p>A model to detect lung diseases from X-ray images using convolutional neural networks and deep learning techniques.</p>
             </div>
@@ -238,8 +226,7 @@
                 <h3>Introduction to Artificial Intelligence</h3>
             </div>
             <div class="certification">
-                <h3>Industry Master Class – Artificial Intelligence</h3>
-            </div>
+                <h3>Industry Master Class – Artificial Intelligence</            </div>
             <div class="certification">
                 <h3>Python for Data Science</h3>
             </div>
